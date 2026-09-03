@@ -1,0 +1,11 @@
+{
+  "Metadata": {
+    "title": "Restaurant Insights",
+    "description": "Manage and optimize your restaurant operations"
+  },
+  "HomePage": {
+    "title": "Restaurant Insights",
+    "description": "Manage your restaurants, branches, menus and operating hours.",
+    "getStarted": "Get started"
+  }
+}

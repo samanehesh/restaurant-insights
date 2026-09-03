@@ -1,0 +1,11 @@
+{
+  "Metadata": {
+    "title": "Aperçu du restaurant",
+    "description": "Gérez et optimisez les opérations de votre restaurant"
+  },
+  "HomePage": {
+    "title": "Aperçu du restaurant",
+    "description": "Gérez vos restaurants, succursales, menus et heures d’ouverture.",
+    "getStarted": "Commencer"
+  }
+}
