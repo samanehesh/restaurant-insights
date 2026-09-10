@@ -15,6 +15,13 @@
       "when": 1789065417258,
       "tag": "0001_add_profiles_auth_user_fk",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1789067453508,
+      "tag": "0002_left_randall_flagg",
+      "breakpoints": true
     }
   ]
 }

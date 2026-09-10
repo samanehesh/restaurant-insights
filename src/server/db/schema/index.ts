@@ -1,4 +1,5 @@
-// Database tables will be exported from this file.
+export * from "./branches";
+export * from "./business-hours";
 export * from "./profiles";
 export * from "./restaurant-members";
 export * from "./restaurants";
