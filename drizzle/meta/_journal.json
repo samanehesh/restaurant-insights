@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1789063647916,
+      "tag": "0000_mean_stardust",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1789065417258,
+      "tag": "0001_add_profiles_auth_user_fk",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1789067453508,
+      "tag": "0002_left_randall_flagg",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1789101387337,
+      "tag": "0003_omniscient_sleeper",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1789104538175,
+      "tag": "0004_dapper_inhumans",
+      "breakpoints": true
+    }
+  ]
+}

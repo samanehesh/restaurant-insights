@@ -1,1 +1,11 @@
-// Database tables will be exported from this file.
+export * from "./ai-recommendations";
+export * from "./ai-recommendations";
+export * from "./branches";
+export * from "./business-hours";
+export * from "./menu-categories";
+export * from "./menu-imports";
+export * from "./menu-items";
+export * from "./profiles";
+export * from "./relations";
+export * from "./restaurant-members";
+export * from "./restaurants";
