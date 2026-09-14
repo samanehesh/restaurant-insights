@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-
+import { Link } from "@/i18n/navigation";
 import { SignUpForm } from "@/features/auth/components/sign-up-form";
 
 export default async function SignUpPage() {
@@ -19,6 +19,15 @@ export default async function SignUpPage() {
         </header>
 
         <SignUpForm />
+        <p className="mt-6 text-center text-sm text-gray-600">
+            {t("hasAccount")}{" "}
+            <Link
+                className="font-medium text-black underline"
+                href="/sign-in"
+            >
+                {t("signIn")}
+            </Link>
+        </p>
       </section>
     </main>
   );

@@ -31,7 +31,9 @@
     "toast": {
       "success": "Compte créé. Consultez votre courriel pour confirmer votre compte.",
       "signupFailed": "La création du compte a échoué. Veuillez réessayer."
-    }
+    }, 
+    "hasAccount": "Vous avez déjà un compte?",
+    "signIn": "Se connecter"
   },
   "LanguageSwitcher": {
     "switchToFrench": "Passer au français",
@@ -39,5 +41,28 @@
     "french": "Français",
     "english": "English",
     "changing": "Changement..."
+  },
+  "SignIn": {
+    "title": "Bon retour",
+    "description": "Connectez-vous pour gérer votre restaurant.",
+    "email": "Adresse courriel",
+    "password": "Mot de passe",
+    "submit": "Se connecter",
+    "submitting": "Connexion...",
+    "noAccount": "Vous n’avez pas de compte?",
+    "createAccount": "Créer un compte",
+    "invalidCredentials": "L’adresse courriel ou le mot de passe est incorrect, ou le courriel n’a pas été confirmé.",
+    "signInFailed": "Nous n’avons pas pu vous connecter. Veuillez réessayer.",
+    "validation": {
+      "invalidEmail": "Entrez une adresse courriel valide.",
+      "passwordRequired": "Entrez votre mot de passe."
+    },
+    "toast": {
+      "emailConfirmed": "Votre courriel a été confirmé. Vous pouvez maintenant vous connecter.",
+      "confirmationFailed": "Le lien de confirmation est invalide ou a expiré.",
+      "signedIn": "Vous êtes maintenant connecté.",
+      "invalidCredentials": "Connexion impossible avec ces identifiants.",
+      "signInFailed": "La connexion a échoué. Veuillez réessayer."
+    }
   }
 }

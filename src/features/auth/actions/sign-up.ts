@@ -1,9 +1,8 @@
 "use server";
 
 import { createClient } from "@/lib/supabase/server";
-
 import { signUpSchema } from "../schemas/sign-up";
-
+import { headers } from "next/headers";
 export type SignUpState = {
   success?: boolean;
   message?: "signupFailed";
@@ -32,14 +31,27 @@ export async function signUp(
 
   const supabase = await createClient();
 
+  const requestHeaders = await headers();
+
+  const origin =
+    requestHeaders.get("origin") ??
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    "http://localhost:3000";
+
+  const normalizedOrigin = origin.replace(/\/$/, "");
+
+  const emailRedirectTo =
+    `${normalizedOrigin}/${locale}/auth/confirm`;
+
   const { error } = await supabase.auth.signUp({
     email,
     password,
     options: {
-      data: {
-        full_name: fullName,
-        preferred_locale: locale,
-      },
+        emailRedirectTo,
+        data: {
+            full_name: fullName,
+            preferred_locale: locale,
+        },
     },
   });
 

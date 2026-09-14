@@ -31,7 +31,9 @@
     "toast": {
       "success": "Account created. Check your email to confirm your account.",
       "signupFailed": "Account creation failed. Please try again."
-    }
+    },
+    "hasAccount": "Already have an account?",
+    "signIn": "Sign in"
   },
   "LanguageSwitcher": {
     "switchToFrench": "Switch to French",
@@ -39,5 +41,28 @@
     "french": "Français",
     "english": "English",
     "changing": "Changing..."
+  },
+  "SignIn": {
+    "title": "Welcome back",
+    "description": "Sign in to manage your restaurant.",
+    "email": "Email address",
+    "password": "Password",
+    "submit": "Sign in",
+    "submitting": "Signing in...",
+    "noAccount": "Don’t have an account?",
+    "createAccount": "Create one",
+    "invalidCredentials": "The email or password is incorrect, or the email has not been confirmed.",
+    "signInFailed": "We could not sign you in. Please try again.",
+    "validation": {
+      "invalidEmail": "Enter a valid email address.",
+      "passwordRequired": "Enter your password."
+    },
+    "toast": {
+      "emailConfirmed": "Your email has been confirmed. You can now sign in.",
+      "confirmationFailed": "The confirmation link is invalid or has expired.",
+      "signedIn": "You are now signed in.",
+      "invalidCredentials": "Unable to sign in with those credentials.",
+      "signInFailed": "Sign-in failed. Please try again."
+    }
   }
 }
