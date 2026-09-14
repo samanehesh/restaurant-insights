@@ -1,6 +1,6 @@
 "use client";
 
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useTransition } from "react";
 
 import { usePathname, useRouter } from "@/i18n/navigation";
@@ -9,6 +9,8 @@ export function LanguageSwitcher() {
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
+  const t = useTranslations("LanguageSwitcher");
+
   const [isPending, startTransition] = useTransition();
 
   const nextLocale = locale === "en" ? "fr" : "en";
@@ -21,23 +23,25 @@ export function LanguageSwitcher() {
     });
   }
 
+  const buttonLabel =
+    nextLocale === "fr"
+      ? t("switchToFrench")
+      : t("switchToEnglish");
+
+  const languageName =
+    nextLocale === "fr"
+      ? t("french")
+      : t("english");
+
   return (
     <button
-      type="button"
-      onClick={changeLanguage}
+      aria-label={buttonLabel}
+      className="rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:bg-slate-100 disabled:cursor-wait disabled:opacity-60"
       disabled={isPending}
-      aria-label={
-        nextLocale === "fr"
-          ? "Passer au français"
-          : "Switch to English"
-      }
-      className="rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 disabled:cursor-wait disabled:opacity-60"
+      onClick={changeLanguage}
+      type="button"
     >
-      {isPending
-        ? "..."
-        : nextLocale === "fr"
-          ? "Français"
-          : "English"}
+      {isPending ? t("changing") : languageName}
     </button>
   );
 }

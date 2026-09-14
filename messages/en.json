@@ -7,5 +7,37 @@
     "title": "Restaurant Insights",
     "description": "Manage your restaurants, branches, menus and operating hours.",
     "getStarted": "Get started"
+  },
+  "SignUp": {
+    "title": "Create your account",
+    "description": "Start managing and optimizing your restaurant.",
+    "fullName": "Full name",
+    "email": "Email address",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "submit": "Create account",
+    "submitting": "Creating account...",
+    "signupFailed": "We could not create your account. Please try again.",
+    "successTitle": "Check your email",
+    "successMessage": "We sent you a confirmation link to finish creating your account.",
+    "validation": {
+      "fullNameTooShort": "Your name must contain at least 2 characters.",
+      "fullNameTooLong": "Your name cannot exceed 150 characters.",
+      "invalidEmail": "Enter a valid email address.",
+      "passwordTooShort": "Your password must contain at least 8 characters.",
+      "passwordTooLong": "Your password cannot exceed 72 characters.",
+      "passwordsDoNotMatch": "The passwords do not match."
+    },
+    "toast": {
+      "success": "Account created. Check your email to confirm your account.",
+      "signupFailed": "Account creation failed. Please try again."
+    }
+  },
+  "LanguageSwitcher": {
+    "switchToFrench": "Switch to French",
+    "switchToEnglish": "Switch to English",
+    "french": "Français",
+    "english": "English",
+    "changing": "Changing..."
   }
 }

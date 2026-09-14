@@ -3,6 +3,8 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 
+import { LanguageSwitcher } from "@/components/language-switcher";
+import { AppProviders } from "@/components/providers/app-providers";
 import { routing } from "@/i18n/routing";
 
 import "../globals.css";
@@ -22,7 +24,11 @@ export async function generateMetadata({
   params,
 }: Pick<LocaleLayoutProps, "params">): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  const t = await getTranslations({
+    locale,
+    namespace: "Metadata",
+  });
 
   return {
     title: t("title"),
@@ -46,7 +52,13 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <AppProviders>
+            <div className="fixed right-4 top-4 z-40">
+              <LanguageSwitcher />
+            </div>
+
+            {children}
+          </AppProviders>
         </NextIntlClientProvider>
       </body>
     </html>
