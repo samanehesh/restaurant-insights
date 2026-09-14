@@ -184,5 +184,44 @@
     "duplicateBranch": "This branch already exists.",
     "creationFailed": "Branch creation failed."
   }
+}, "HoursOnboarding": {
+  "eyebrow": "Business hours",
+  "title": "Set your weekly hours",
+  "description": "Configure the regular operating hours for {branch}.",
+  "signOut": "Sign out",
+  "day": "Day",
+  "openTime": "Opens",
+  "closeTime": "Closes",
+  "closed": "Closed",
+  "openTimeFor": "Opening time for {day}",
+  "closeTimeFor": "Closing time for {day}",
+  "submit": "Save business hours",
+  "submitting": "Saving hours...",
+  "successTitle": "Business hours saved",
+  "successDescription": "Your initial restaurant setup is complete.",
+  "existingTitle": "Business hours are ready",
+  "existingDescription": "All seven days have already been configured.",
+  "days": {
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday"
+  },
+  "errors": {
+    "unauthenticated": "Your session has expired. Please sign in again.",
+    "unauthorized": "You do not have permission to update these hours.",
+    "invalidHours": "Check the operating hours and try again.",
+    "saveFailed": "We could not save the business hours."
+  },
+  "toast": {
+    "saved": "Business hours saved successfully.",
+    "unauthenticated": "Your session has expired.",
+    "unauthorized": "You do not have permission to update these hours.",
+    "invalidHours": "Some business hours are invalid.",
+    "saveFailed": "Saving business hours failed."
+  }
 }
 }

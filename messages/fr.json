@@ -183,5 +183,45 @@
     "duplicateBranch": "Cette succursale existe déjà.",
     "creationFailed": "La création de la succursale a échoué."
   }
+}, 
+"HoursOnboarding": {
+  "eyebrow": "Heures d’ouverture",
+  "title": "Définissez vos heures hebdomadaires",
+  "description": "Configurez les heures d’ouverture habituelles de {branch}.",
+  "signOut": "Se déconnecter",
+  "day": "Jour",
+  "openTime": "Ouverture",
+  "closeTime": "Fermeture",
+  "closed": "Fermé",
+  "openTimeFor": "Heure d’ouverture du {day}",
+  "closeTimeFor": "Heure de fermeture du {day}",
+  "submit": "Enregistrer les heures",
+  "submitting": "Enregistrement...",
+  "successTitle": "Heures enregistrées",
+  "successDescription": "La configuration initiale de votre restaurant est terminée.",
+  "existingTitle": "Les heures sont prêtes",
+  "existingDescription": "Les sept jours ont déjà été configurés.",
+  "days": {
+    "monday": "Lundi",
+    "tuesday": "Mardi",
+    "wednesday": "Mercredi",
+    "thursday": "Jeudi",
+    "friday": "Vendredi",
+    "saturday": "Samedi",
+    "sunday": "Dimanche"
+  },
+  "errors": {
+    "unauthenticated": "Votre session a expiré. Veuillez vous reconnecter.",
+    "unauthorized": "Vous n’avez pas l’autorisation de modifier ces heures.",
+    "invalidHours": "Vérifiez les heures d’ouverture et réessayez.",
+    "saveFailed": "Nous n’avons pas pu enregistrer les heures."
+  },
+  "toast": {
+    "saved": "Heures d’ouverture enregistrées.",
+    "unauthenticated": "Votre session a expiré.",
+    "unauthorized": "Vous n’avez pas l’autorisation de modifier ces heures.",
+    "invalidHours": "Certaines heures d’ouverture sont invalides.",
+    "saveFailed": "L’enregistrement des heures a échoué."
+  }
 }
 }

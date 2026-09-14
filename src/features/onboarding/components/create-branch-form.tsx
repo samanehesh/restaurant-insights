@@ -3,7 +3,7 @@
 import { useActionState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { toast } from "sonner";
-
+import { useRouter } from "@/i18n/navigation";
 import {
   createBranch,
   type CreateBranchState,
@@ -32,17 +32,18 @@ export function CreateBranchForm({
     createBranch,
     initialState,
   );
-
+    const router = useRouter();
   useEffect(() => {
     if (state.success) {
       toast.success(t("toast.created"));
+      router.replace("/onboarding/hours");
       return;
     }
 
     if (state.message) {
       toast.error(t(`toast.${state.message}`));
     }
-  }, [state.success, state.message, t]);
+  }, [router, state.success, state.message, t]);
 
   function getError(field: string) {
     const errorCode = state.fieldErrors?.[field]?.[0];
