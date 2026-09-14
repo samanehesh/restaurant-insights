@@ -7,5 +7,71 @@
     "title": "Aperçu du restaurant",
     "description": "Gérez vos restaurants, succursales, menus et heures d’ouverture.",
     "getStarted": "Commencer"
+  },
+  "SignUp": {
+    "title": "Créer votre compte",
+    "description": "Commencez à gérer et à optimiser votre restaurant.",
+    "fullName": "Nom complet",
+    "email": "Adresse courriel",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "submit": "Créer un compte",
+    "submitting": "Création du compte...",
+    "signupFailed": "Nous n’avons pas pu créer votre compte. Veuillez réessayer.",
+    "successTitle": "Consultez votre courriel",
+    "successMessage": "Nous vous avons envoyé un lien de confirmation pour terminer la création de votre compte.",
+    "validation": {
+      "fullNameTooShort": "Votre nom doit contenir au moins 2 caractères.",
+      "fullNameTooLong": "Votre nom ne peut pas dépasser 150 caractères.",
+      "invalidEmail": "Entrez une adresse courriel valide.",
+      "passwordTooShort": "Votre mot de passe doit contenir au moins 8 caractères.",
+      "passwordTooLong": "Votre mot de passe ne peut pas dépasser 72 caractères.",
+      "passwordsDoNotMatch": "Les mots de passe ne correspondent pas."
+    },
+    "toast": {
+      "success": "Compte créé. Consultez votre courriel pour confirmer votre compte.",
+      "signupFailed": "La création du compte a échoué. Veuillez réessayer."
+    }, 
+    "hasAccount": "Vous avez déjà un compte?",
+    "signIn": "Se connecter"
+  },
+  "LanguageSwitcher": {
+    "switchToFrench": "Passer au français",
+    "switchToEnglish": "Passer à l’anglais",
+    "french": "Français",
+    "english": "English",
+    "changing": "Changement..."
+  },
+  "SignIn": {
+    "title": "Bon retour",
+    "description": "Connectez-vous pour gérer votre restaurant.",
+    "email": "Adresse courriel",
+    "password": "Mot de passe",
+    "submit": "Se connecter",
+    "submitting": "Connexion...",
+    "noAccount": "Vous n’avez pas de compte?",
+    "createAccount": "Créer un compte",
+    "invalidCredentials": "L’adresse courriel ou le mot de passe est incorrect, ou le courriel n’a pas été confirmé.",
+    "signInFailed": "Nous n’avons pas pu vous connecter. Veuillez réessayer.",
+    "validation": {
+      "invalidEmail": "Entrez une adresse courriel valide.",
+      "passwordRequired": "Entrez votre mot de passe."
+    },
+    "toast": {
+      "emailConfirmed": "Votre courriel a été confirmé. Vous pouvez maintenant vous connecter.",
+      "confirmationFailed": "Le lien de confirmation est invalide ou a expiré.",
+      "signedIn": "Vous êtes maintenant connecté.",
+      "invalidCredentials": "Connexion impossible avec ces identifiants.",
+      "signInFailed": "La connexion a échoué. Veuillez réessayer."
+    }
+  }, 
+  "Onboarding": {
+    "eyebrow": "Configuration du restaurant",
+    "title": "Bienvenue dans Restaurant Insights",
+    "description": "Votre compte est prêt. Nous allons maintenant configurer votre restaurant et sa première succursale.",
+    "signedInAs": "Connecté en tant que",
+    "signOut": "Se déconnecter",
+    "nextStepTitle": "Créer votre restaurant",
+    "nextStepDescription": "À l’étape suivante, vous indiquerez le nom du restaurant, le pays, le fuseau horaire, la devise et la langue par défaut."
   }
 }

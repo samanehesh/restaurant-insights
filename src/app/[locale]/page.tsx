@@ -1,13 +1,9 @@
-import { LanguageSwitcher } from "@/components/language-switcher";
 import { getTranslations } from "next-intl/server";
 export default async function HomePage() {
   const t = await getTranslations("HomePage");
 
   return (
     <main className="relative flex min-h-screen items-center justify-center bg-slate-50 px-6">
-      <div className="absolute right-6 top-6">
-        <LanguageSwitcher />
-      </div>
 
       <section className="max-w-2xl text-center">
         <h1 className="text-4xl font-bold tracking-tight text-slate-900">

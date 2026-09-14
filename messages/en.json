@@ -7,5 +7,71 @@
     "title": "Restaurant Insights",
     "description": "Manage your restaurants, branches, menus and operating hours.",
     "getStarted": "Get started"
+  },
+  "SignUp": {
+    "title": "Create your account",
+    "description": "Start managing and optimizing your restaurant.",
+    "fullName": "Full name",
+    "email": "Email address",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "submit": "Create account",
+    "submitting": "Creating account...",
+    "signupFailed": "We could not create your account. Please try again.",
+    "successTitle": "Check your email",
+    "successMessage": "We sent you a confirmation link to finish creating your account.",
+    "validation": {
+      "fullNameTooShort": "Your name must contain at least 2 characters.",
+      "fullNameTooLong": "Your name cannot exceed 150 characters.",
+      "invalidEmail": "Enter a valid email address.",
+      "passwordTooShort": "Your password must contain at least 8 characters.",
+      "passwordTooLong": "Your password cannot exceed 72 characters.",
+      "passwordsDoNotMatch": "The passwords do not match."
+    },
+    "toast": {
+      "success": "Account created. Check your email to confirm your account.",
+      "signupFailed": "Account creation failed. Please try again."
+    },
+    "hasAccount": "Already have an account?",
+    "signIn": "Sign in"
+  },
+  "LanguageSwitcher": {
+    "switchToFrench": "Switch to French",
+    "switchToEnglish": "Switch to English",
+    "french": "Français",
+    "english": "English",
+    "changing": "Changing..."
+  },
+  "SignIn": {
+    "title": "Welcome back",
+    "description": "Sign in to manage your restaurant.",
+    "email": "Email address",
+    "password": "Password",
+    "submit": "Sign in",
+    "submitting": "Signing in...",
+    "noAccount": "Don’t have an account?",
+    "createAccount": "Create one",
+    "invalidCredentials": "The email or password is incorrect, or the email has not been confirmed.",
+    "signInFailed": "We could not sign you in. Please try again.",
+    "validation": {
+      "invalidEmail": "Enter a valid email address.",
+      "passwordRequired": "Enter your password."
+    },
+    "toast": {
+      "emailConfirmed": "Your email has been confirmed. You can now sign in.",
+      "confirmationFailed": "The confirmation link is invalid or has expired.",
+      "signedIn": "You are now signed in.",
+      "invalidCredentials": "Unable to sign in with those credentials.",
+      "signInFailed": "Sign-in failed. Please try again."
+    }
+  },
+  "Onboarding": {
+    "eyebrow": "Restaurant setup",
+    "title": "Welcome to Restaurant Insights",
+    "description": "Your account is ready. Next, we’ll configure your restaurant and its first branch.",
+    "signedInAs": "Signed in as",
+    "signOut": "Sign out",
+    "nextStepTitle": "Create your restaurant",
+    "nextStepDescription": "In the next step, you’ll enter your restaurant name, country, timezone, currency and default language."
   }
 }
