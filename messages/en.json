@@ -64,5 +64,14 @@
       "invalidCredentials": "Unable to sign in with those credentials.",
       "signInFailed": "Sign-in failed. Please try again."
     }
+  },
+  "Onboarding": {
+    "eyebrow": "Restaurant setup",
+    "title": "Welcome to Restaurant Insights",
+    "description": "Your account is ready. Next, we’ll configure your restaurant and its first branch.",
+    "signedInAs": "Signed in as",
+    "signOut": "Sign out",
+    "nextStepTitle": "Create your restaurant",
+    "nextStepDescription": "In the next step, you’ll enter your restaurant name, country, timezone, currency and default language."
   }
 }

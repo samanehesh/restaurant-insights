@@ -64,5 +64,14 @@
       "invalidCredentials": "Connexion impossible avec ces identifiants.",
       "signInFailed": "La connexion a échoué. Veuillez réessayer."
     }
+  }, 
+  "Onboarding": {
+    "eyebrow": "Configuration du restaurant",
+    "title": "Bienvenue dans Restaurant Insights",
+    "description": "Votre compte est prêt. Nous allons maintenant configurer votre restaurant et sa première succursale.",
+    "signedInAs": "Connecté en tant que",
+    "signOut": "Se déconnecter",
+    "nextStepTitle": "Créer votre restaurant",
+    "nextStepDescription": "À l’étape suivante, vous indiquerez le nom du restaurant, le pays, le fuseau horaire, la devise et la langue par défaut."
   }
 }

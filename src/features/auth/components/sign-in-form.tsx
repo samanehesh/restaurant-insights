@@ -52,7 +52,7 @@ export function SignInForm({
     }
 
     toast.success(t("toast.signedIn"));
-    router.replace("/");
+    router.replace("/onboarding");
     router.refresh();
   }, [router, state.success, t]);
 
