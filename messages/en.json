@@ -73,5 +73,116 @@
     "signOut": "Sign out",
     "nextStepTitle": "Create your restaurant",
     "nextStepDescription": "In the next step, you’ll enter your restaurant name, country, timezone, currency and default language."
+  }, 
+  "RestaurantOnboarding": {
+  "eyebrow": "Restaurant setup",
+  "title": "Set up your restaurant",
+  "description": "Tell us about your restaurant before adding branches, hours and menu items.",
+  "signedInAs": "Signed in as",
+  "signOut": "Sign out",
+  "formTitle": "Restaurant information",
+  "formDescription": "These settings will be used as defaults across your restaurant.",
+  "submit": "Create restaurant",
+  "submitting": "Creating restaurant...",
+  "successTitle": "Restaurant created",
+  "successDescription": "Your restaurant was created and you were assigned as its owner.",
+  "existingRestaurantTitle": "Your restaurant is ready",
+  "existingRestaurantDescription": "You have already completed the restaurant information step.",
+  "fields": {
+    "name": "Restaurant name",
+    "namePlaceholder": "Example: Mountain View Bistro",
+    "country": "Country",
+    "currency": "Currency",
+    "timezone": "Timezone",
+    "defaultLanguage": "Default language"
+  },
+  "countries": {
+    "canada": "Canada",
+    "unitedStates": "United States",
+    "unitedKingdom": "United Kingdom",
+    "australia": "Australia"
+  },
+  "languages": {
+    "english": "English",
+    "french": "French"
+  },
+  "validation": {
+    "nameTooShort": "The restaurant name must contain at least 2 characters.",
+    "nameTooLong": "The restaurant name cannot exceed 200 characters.",
+    "invalidCountry": "Select a valid country.",
+    "timezoneRequired": "Select a timezone.",
+    "invalidTimezone": "Select a valid timezone.",
+    "invalidCurrency": "Select a valid currency.",
+    "invalid_type": "Select a valid value."
+  },
+  "errors": {
+    "unauthenticated": "Your session has expired. Please sign in again.",
+    "alreadyHasRestaurant": "Your restaurant has already been created.",
+    "creationFailed": "We could not create the restaurant. Please try again."
+  },
+  "toast": {
+    "created": "Restaurant created successfully.",
+    "unauthenticated": "Your session has expired.",
+    "alreadyHasRestaurant": "Your restaurant has already been created.",
+    "creationFailed": "Restaurant creation failed."
   }
+},
+"BranchOnboarding": {
+  "eyebrow": "Branch setup",
+  "title": "Add your first branch",
+  "description": "Add the primary location for {restaurant}.",
+  "signOut": "Sign out",
+  "submit": "Create branch",
+  "submitting": "Creating branch...",
+  "successTitle": "Branch created",
+  "successDescription": "Your first branch is ready. Business hours are the next step.",
+  "existingTitle": "Your first branch is ready",
+  "existingDescription": "{branch} has already been configured.",
+  "fields": {
+    "name": "Branch name",
+    "namePlaceholder": "Example: Downtown",
+    "addressLine1": "Street address",
+    "addressLine2": "Unit or suite (optional)",
+    "city": "City",
+    "region": "Province or state",
+    "postalCode": "Postal or ZIP code",
+    "country": "Country",
+    "timezone": "Timezone"
+  },
+  "countries": {
+    "canada": "Canada",
+    "unitedStates": "United States",
+    "unitedKingdom": "United Kingdom",
+    "australia": "Australia"
+  },
+  "validation": {
+    "invalidRestaurant": "The selected restaurant is invalid.",
+    "nameTooShort": "The branch name must contain at least 2 characters.",
+    "nameTooLong": "The branch name cannot exceed 150 characters.",
+    "addressTooShort": "Enter a valid street address.",
+    "addressTooLong": "The address cannot exceed 200 characters.",
+    "cityTooShort": "Enter a valid city.",
+    "cityTooLong": "The city cannot exceed 100 characters.",
+    "regionTooShort": "Enter a valid province or state.",
+    "regionTooLong": "The province or state cannot exceed 100 characters.",
+    "postalCodeTooShort": "Enter a valid postal or ZIP code.",
+    "postalCodeTooLong": "The postal or ZIP code cannot exceed 20 characters.",
+    "invalidCountry": "Select a valid country.",
+    "timezoneRequired": "Select a timezone.",
+    "invalidTimezone": "Select a valid timezone."
+  },
+  "errors": {
+    "unauthenticated": "Your session has expired. Please sign in again.",
+    "unauthorized": "You do not have permission to add a branch.",
+    "duplicateBranch": "A branch with this name already exists.",
+    "creationFailed": "We could not create the branch. Please try again."
+  },
+  "toast": {
+    "created": "Branch created successfully.",
+    "unauthenticated": "Your session has expired.",
+    "unauthorized": "You do not have permission to add this branch.",
+    "duplicateBranch": "This branch already exists.",
+    "creationFailed": "Branch creation failed."
+  }
+}
 }
