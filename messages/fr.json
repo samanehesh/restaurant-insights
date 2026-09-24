@@ -73,5 +73,175 @@
     "signOut": "Se déconnecter",
     "nextStepTitle": "Créer votre restaurant",
     "nextStepDescription": "À l’étape suivante, vous indiquerez le nom du restaurant, le pays, le fuseau horaire, la devise et la langue par défaut."
+  },
+  "RestaurantOnboarding": {
+  "eyebrow": "Configuration du restaurant",
+  "title": "Configurez votre restaurant",
+  "description": "Présentez-nous votre restaurant avant d’ajouter les succursales, les horaires et les éléments du menu.",
+  "signedInAs": "Connecté en tant que",
+  "signOut": "Se déconnecter",
+  "formTitle": "Informations sur le restaurant",
+  "formDescription": "Ces paramètres seront utilisés par défaut dans votre restaurant.",
+  "submit": "Créer le restaurant",
+  "submitting": "Création du restaurant...",
+  "successTitle": "Restaurant créé",
+  "successDescription": "Votre restaurant a été créé et vous avez été désigné comme propriétaire.",
+  "existingRestaurantTitle": "Votre restaurant est prêt",
+  "existingRestaurantDescription": "Vous avez déjà terminé l’étape des informations sur le restaurant.",
+  "fields": {
+    "name": "Nom du restaurant",
+    "namePlaceholder": "Exemple : Bistro Mountain View",
+    "country": "Pays",
+    "currency": "Devise",
+    "timezone": "Fuseau horaire",
+    "defaultLanguage": "Langue par défaut"
+  },
+  "countries": {
+    "canada": "Canada",
+    "unitedStates": "États-Unis",
+    "unitedKingdom": "Royaume-Uni",
+    "australia": "Australie"
+  },
+  "languages": {
+    "english": "Anglais",
+    "french": "Français"
+  },
+  "validation": {
+    "nameTooShort": "Le nom du restaurant doit contenir au moins 2 caractères.",
+    "nameTooLong": "Le nom du restaurant ne peut pas dépasser 200 caractères.",
+    "invalidCountry": "Sélectionnez un pays valide.",
+    "timezoneRequired": "Sélectionnez un fuseau horaire.",
+    "invalidTimezone": "Sélectionnez un fuseau horaire valide.",
+    "invalidCurrency": "Sélectionnez une devise valide.",
+    "invalid_type": "Sélectionnez une valeur valide."
+  },
+  "errors": {
+    "unauthenticated": "Votre session a expiré. Veuillez vous reconnecter.",
+    "alreadyHasRestaurant": "Votre restaurant a déjà été créé.",
+    "creationFailed": "Nous n’avons pas pu créer le restaurant. Veuillez réessayer."
+  },
+  "toast": {
+    "created": "Restaurant créé avec succès.",
+    "unauthenticated": "Votre session a expiré.",
+    "alreadyHasRestaurant": "Votre restaurant a déjà été créé.",
+    "creationFailed": "La création du restaurant a échoué."
   }
+}, "BranchOnboarding": {
+  "eyebrow": "Configuration de la succursale",
+  "title": "Ajoutez votre première succursale",
+  "description": "Ajoutez l’emplacement principal de {restaurant}.",
+  "signOut": "Se déconnecter",
+  "submit": "Créer la succursale",
+  "submitting": "Création de la succursale...",
+  "successTitle": "Succursale créée",
+  "successDescription": "Votre première succursale est prête. Les heures d’ouverture constituent la prochaine étape.",
+  "existingTitle": "Votre première succursale est prête",
+  "existingDescription": "{branch} a déjà été configurée.",
+  "fields": {
+    "name": "Nom de la succursale",
+    "namePlaceholder": "Exemple : Centre-ville",
+    "addressLine1": "Adresse",
+    "addressLine2": "Unité ou bureau (facultatif)",
+    "city": "Ville",
+    "region": "Province ou État",
+    "postalCode": "Code postal",
+    "country": "Pays",
+    "timezone": "Fuseau horaire"
+  },
+  "countries": {
+    "canada": "Canada",
+    "unitedStates": "États-Unis",
+    "unitedKingdom": "Royaume-Uni",
+    "australia": "Australie"
+  },
+  "validation": {
+    "invalidRestaurant": "Le restaurant sélectionné est invalide.",
+    "nameTooShort": "Le nom doit contenir au moins 2 caractères.",
+    "nameTooLong": "Le nom ne peut pas dépasser 150 caractères.",
+    "addressTooShort": "Entrez une adresse valide.",
+    "addressTooLong": "L’adresse ne peut pas dépasser 200 caractères.",
+    "cityTooShort": "Entrez une ville valide.",
+    "cityTooLong": "La ville ne peut pas dépasser 100 caractères.",
+    "regionTooShort": "Entrez une province ou un État valide.",
+    "regionTooLong": "La province ou l’État ne peut pas dépasser 100 caractères.",
+    "postalCodeTooShort": "Entrez un code postal valide.",
+    "postalCodeTooLong": "Le code postal ne peut pas dépasser 20 caractères.",
+    "invalidCountry": "Sélectionnez un pays valide.",
+    "timezoneRequired": "Sélectionnez un fuseau horaire.",
+    "invalidTimezone": "Sélectionnez un fuseau horaire valide."
+  },
+  "errors": {
+    "unauthenticated": "Votre session a expiré. Veuillez vous reconnecter.",
+    "unauthorized": "Vous n’avez pas l’autorisation d’ajouter une succursale.",
+    "duplicateBranch": "Une succursale portant ce nom existe déjà.",
+    "creationFailed": "Nous n’avons pas pu créer la succursale. Veuillez réessayer."
+  },
+  "toast": {
+    "created": "Succursale créée avec succès.",
+    "unauthenticated": "Votre session a expiré.",
+    "unauthorized": "Vous n’avez pas l’autorisation d’ajouter cette succursale.",
+    "duplicateBranch": "Cette succursale existe déjà.",
+    "creationFailed": "La création de la succursale a échoué."
+  }
+}, 
+"HoursOnboarding": {
+  "eyebrow": "Heures d’ouverture",
+  "title": "Définissez vos heures hebdomadaires",
+  "description": "Configurez les heures d’ouverture habituelles de {branch}.",
+  "signOut": "Se déconnecter",
+  "day": "Jour",
+  "openTime": "Ouverture",
+  "closeTime": "Fermeture",
+  "closed": "Fermé",
+  "openTimeFor": "Heure d’ouverture du {day}",
+  "closeTimeFor": "Heure de fermeture du {day}",
+  "submit": "Enregistrer les heures",
+  "submitting": "Enregistrement...",
+  "successTitle": "Heures enregistrées",
+  "successDescription": "La configuration initiale de votre restaurant est terminée.",
+  "existingTitle": "Les heures sont prêtes",
+  "existingDescription": "Les sept jours ont déjà été configurés.",
+  "days": {
+    "monday": "Lundi",
+    "tuesday": "Mardi",
+    "wednesday": "Mercredi",
+    "thursday": "Jeudi",
+    "friday": "Vendredi",
+    "saturday": "Samedi",
+    "sunday": "Dimanche"
+  },
+  "errors": {
+    "unauthenticated": "Votre session a expiré. Veuillez vous reconnecter.",
+    "unauthorized": "Vous n’avez pas l’autorisation de modifier ces heures.",
+    "invalidHours": "Vérifiez les heures d’ouverture et réessayez.",
+    "saveFailed": "Nous n’avons pas pu enregistrer les heures."
+  },
+  "toast": {
+    "saved": "Heures d’ouverture enregistrées.",
+    "unauthenticated": "Votre session a expiré.",
+    "unauthorized": "Vous n’avez pas l’autorisation de modifier ces heures.",
+    "invalidHours": "Certaines heures d’ouverture sont invalides.",
+    "saveFailed": "L’enregistrement des heures a échoué."
+  }
+},
+"Dashboard": {
+  "eyebrow": "Tableau de bord",
+  "title": "Aperçu de {restaurant}",
+  "description": "La configuration de votre restaurant est terminée. Les futures données opérationnelles apparaîtront ici.",
+  "signOut": "Se déconnecter",
+  "setupSummary": "Résumé de la configuration",
+  "restaurant": "Restaurant",
+  "primaryBranch": "Succursale principale",
+  "businessHours": "Heures d’ouverture",
+  "configured": "Configurées",
+  "nextTitle": "Prochaines étapes",
+  "nextDescription": "La base du projet est prête pour la gestion du menu, les analyses et les recommandations par IA.",
+  "comingSoon": "Bientôt disponible",
+  "modules": {
+    "menu": "Gestion du menu",
+    "analytics": "Analyses",
+    "recommendations": "Recommandations par IA",
+    "settings": "Paramètres du restaurant"
+  }
+}
 }

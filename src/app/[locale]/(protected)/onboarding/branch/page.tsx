@@ -4,21 +4,23 @@ import { getTranslations } from "next-intl/server";
 import { notFound, redirect } from "next/navigation";
 
 import { SignOutButton } from "@/features/auth/components/sign-out-button";
-import { CreateRestaurantForm } from "@/features/onboarding/components/create-restaurant-form";
+import { CreateBranchForm } from "@/features/onboarding/components/create-branch-form";
 import { routing } from "@/i18n/routing";
 import { createClient } from "@/lib/supabase/server";
 import { db } from "@/server/db";
+import { branches } from "@/server/db/schema/branches";
 import { restaurantMembers } from "@/server/db/schema/restaurant-members";
+import { restaurants } from "@/server/db/schema/restaurants";
 
-type OnboardingPageProps = {
+type BranchOnboardingPageProps = {
   params: Promise<{
     locale: string;
   }>;
 };
 
-export default async function OnboardingPage({
+export default async function BranchOnboardingPage({
   params,
-}: OnboardingPageProps) {
+}: BranchOnboardingPageProps) {
   const { locale } = await params;
 
   if (!hasLocale(routing.locales, locale)) {
@@ -27,7 +29,7 @@ export default async function OnboardingPage({
 
   const t = await getTranslations({
     locale,
-    namespace: "RestaurantOnboarding",
+    namespace: "BranchOnboarding",
   });
 
   const supabase = await createClient();
@@ -40,13 +42,32 @@ export default async function OnboardingPage({
     redirect(`/${locale}/sign-in`);
   }
 
-  const [existingMembership] = await db
+  const [membership] = await db
     .select({
       restaurantId: restaurantMembers.restaurantId,
-      role: restaurantMembers.role,
+      restaurantName: restaurants.name,
+      country: restaurants.country,
+      timezone: restaurants.timezone,
     })
     .from(restaurantMembers)
+    .innerJoin(
+      restaurants,
+      eq(restaurantMembers.restaurantId, restaurants.id),
+    )
     .where(eq(restaurantMembers.userId, user.id))
+    .limit(1);
+
+  if (!membership) {
+    redirect(`/${locale}/onboarding`);
+  }
+
+  const [existingBranch] = await db
+    .select({
+      id: branches.id,
+      name: branches.name,
+    })
+    .from(branches)
+    .where(eq(branches.restaurantId, membership.restaurantId))
     .limit(1);
 
   return (
@@ -63,7 +84,9 @@ export default async function OnboardingPage({
             </h1>
 
             <p className="mt-3 text-gray-600">
-              {t("description")}
+              {t("description", {
+                restaurant: membership.restaurantName,
+              })}
             </p>
           </div>
 
@@ -73,44 +96,28 @@ export default async function OnboardingPage({
           />
         </div>
 
-        <div className="mt-8 rounded-lg border bg-gray-50 p-4">
-          <p className="text-sm text-gray-500">
-            {t("signedInAs")}
-          </p>
-
-          <p className="mt-1 font-medium">
-            {user.email}
-          </p>
-        </div>
-
         <div className="mt-8">
-          {existingMembership ? (
+          {existingBranch ? (
             <div
               className="rounded-lg border border-blue-300 bg-blue-50 p-5 text-blue-900"
               role="status"
             >
               <h2 className="font-semibold">
-                {t("existingRestaurantTitle")}
+                {t("existingTitle")}
               </h2>
 
               <p className="mt-2 text-sm">
-                {t("existingRestaurantDescription")}
+                {t("existingDescription", {
+                  branch: existingBranch.name,
+                })}
               </p>
             </div>
           ) : (
-            <>
-              <h2 className="text-xl font-semibold">
-                {t("formTitle")}
-              </h2>
-
-              <p className="mt-2 text-gray-600">
-                {t("formDescription")}
-              </p>
-
-              <div className="mt-6">
-                <CreateRestaurantForm locale={locale} />
-              </div>
-            </>
+            <CreateBranchForm
+              defaultCountry={membership.country}
+              defaultTimezone={membership.timezone}
+              restaurantId={membership.restaurantId}
+            />
           )}
         </div>
       </section>

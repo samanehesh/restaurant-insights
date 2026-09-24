@@ -1,5 +1,4 @@
 export * from "./ai-recommendations";
-export * from "./ai-recommendations";
 export * from "./branches";
 export * from "./business-hours";
 export * from "./menu-categories";
