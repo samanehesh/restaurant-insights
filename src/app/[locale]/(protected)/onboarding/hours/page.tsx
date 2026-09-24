@@ -72,7 +72,9 @@ export default async function HoursOnboardingPage({
     .where(eq(businessHours.branchId, branch.id));
 
   const hoursAreComplete = savedHours.length === 7;
-
+    if (hoursAreComplete) {
+    redirect(`/${locale}/dashboard`);
+}
   return (
     <main className="min-h-screen bg-gray-50 px-4 py-24">
       <section className="mx-auto max-w-4xl rounded-xl border bg-white p-8 shadow-sm">
@@ -100,22 +102,9 @@ export default async function HoursOnboardingPage({
         </div>
 
         <div className="mt-8">
-          {hoursAreComplete ? (
-            <div
-              className="rounded-lg border border-blue-300 bg-blue-50 p-5 text-blue-900"
-              role="status"
-            >
-              <h2 className="font-semibold">
-                {t("existingTitle")}
-              </h2>
 
-              <p className="mt-2 text-sm">
-                {t("existingDescription")}
-              </p>
-            </div>
-          ) : (
             <BusinessHoursForm branchId={branch.id} />
-          )}
+          
         </div>
       </section>
     </main>

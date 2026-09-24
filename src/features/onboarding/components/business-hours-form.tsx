@@ -7,7 +7,7 @@ import {
 } from "react";
 import { useTranslations } from "next-intl";
 import { toast } from "sonner";
-
+import { useRouter } from "@/i18n/navigation";
 import {
   saveBusinessHours,
   type SaveBusinessHoursState,
@@ -37,7 +37,7 @@ export function BusinessHoursForm({
   branchId,
 }: BusinessHoursFormProps) {
   const t = useTranslations("HoursOnboarding");
-
+  const router = useRouter();
   const [closedDays, setClosedDays] =
     useState(initialClosedDays);
 
@@ -46,16 +46,17 @@ export function BusinessHoursForm({
     initialState,
   );
 
-  useEffect(() => {
-    if (state.success) {
-      toast.success(t("toast.saved"));
-      return;
-    }
+    useEffect(() => {
+        if (state.success) {
+        toast.success(t("toast.saved"));
+        router.replace("/dashboard");
+        return;
+        }
 
-    if (state.message) {
-      toast.error(t(`toast.${state.message}`));
-    }
-  }, [state.success, state.message, t]);
+        if (state.message) {
+        toast.error(t(`toast.${state.message}`));
+        }
+    }, [router, state.success, state.message, t]);
 
   function changeClosedStatus(
     day: DayOfWeek,

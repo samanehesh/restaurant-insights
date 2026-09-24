@@ -223,5 +223,25 @@
     "invalidHours": "Certaines heures d’ouverture sont invalides.",
     "saveFailed": "L’enregistrement des heures a échoué."
   }
+},
+"Dashboard": {
+  "eyebrow": "Tableau de bord",
+  "title": "Aperçu de {restaurant}",
+  "description": "La configuration de votre restaurant est terminée. Les futures données opérationnelles apparaîtront ici.",
+  "signOut": "Se déconnecter",
+  "setupSummary": "Résumé de la configuration",
+  "restaurant": "Restaurant",
+  "primaryBranch": "Succursale principale",
+  "businessHours": "Heures d’ouverture",
+  "configured": "Configurées",
+  "nextTitle": "Prochaines étapes",
+  "nextDescription": "La base du projet est prête pour la gestion du menu, les analyses et les recommandations par IA.",
+  "comingSoon": "Bientôt disponible",
+  "modules": {
+    "menu": "Gestion du menu",
+    "analytics": "Analyses",
+    "recommendations": "Recommandations par IA",
+    "settings": "Paramètres du restaurant"
+  }
 }
 }

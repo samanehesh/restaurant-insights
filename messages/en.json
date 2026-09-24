@@ -223,5 +223,25 @@
     "invalidHours": "Some business hours are invalid.",
     "saveFailed": "Saving business hours failed."
   }
+}, 
+"Dashboard": {
+  "eyebrow": "Dashboard",
+  "title": "{restaurant} overview",
+  "description": "Your restaurant setup is complete. Future operational insights will appear here.",
+  "signOut": "Sign out",
+  "setupSummary": "Setup summary",
+  "restaurant": "Restaurant",
+  "primaryBranch": "Primary branch",
+  "businessHours": "Business hours",
+  "configured": "Configured",
+  "nextTitle": "What comes next",
+  "nextDescription": "The project foundation is ready for menu management, analytics and AI recommendations.",
+  "comingSoon": "Coming soon",
+  "modules": {
+    "menu": "Menu management",
+    "analytics": "Analytics",
+    "recommendations": "AI recommendations",
+    "settings": "Restaurant settings"
+  }
 }
 }
